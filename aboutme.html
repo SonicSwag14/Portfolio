@@ -51,15 +51,27 @@
 										<h1>About Me</h1>
 									</header>
 									<span class="image main"><img src="images/azurelogo2.png" style="width: 500px; height: auto; class="center"" alt="AzureLogo2" /> </span>
-									<h2>250 Words Ver</h2>
-									<p>Anais Piquion is a freelance game designer and visual artist based in Orlando, Florida, who currently holds a bachelors in Game Design from UCF. Specializing in 2D art, pixel design, and interactive storytelling, she creates narrative-driven games that merge vibrant worldbuilding with emotional depth. Her creative practice spans character and concept art, user interface design, and narrative writing, blending traditional illustration with digital techniques and coding.</p>
-									<p>Deeply inspired by Japanese culture, mythology, and folktales, Anais often reinterprets ancient stories and creatures through a fantasy lens, crafting experiences that connect players across fictional and emotional boundaries. Her fascination with steampunk and cyber aesthetics adds a distinctive flair to her visual style, while her passion for RPGs and JRPGs continues to shape her approach to game design—balancing strong storytelling with immersive gameplay. Her art style also consists of cute and smaller versions of characters and creatures and are used in many of her works and art commissions.</p>
-									<p>Anais’s work gained notable attention through her contributions to Year 100, a collaborative indie game that received high praise on Steam, which include her striking enemy design and her memorable voice performance. As an artist constantly exploring new mediums and techniques, she brings curiosity, creativity, and authenticity to every project.</p>
-									<p>When she’s not designing, Anais is a naturalist and animal lover; she enjoys taking care of her plants and her many pets. Whether creating small pixel-based experiences or developing larger narrative projects, Anais continues to push the boundaries of storytelling through art and design.</p>
 									
-									<h2>100 Words Ver</h2>
-									<p>Anais Piquion is a game designer and 2D artist based in Orlando, Florida. Specializing in pixel art, character and concept design, and narrative-driven games, she combines storytelling with visual creativity. Inspired by Japanese culture, mythology, and steampunk influences, her work bridges cultural traditions and futuristic aesthetics. Anais contributed to the indie game Year 100, praised for its art direction and voice performance. Anais continues to develop original games that blend emotion, myth, and design driven by her passion for RPGs and immersive narratives. When not creating, she enjoys collecting art merchandise and caring for her cat, Saki.</p>
-								</div>
+									<!-- Toggle Buttons -->
+      								<div style="text-align:center; margin-bottom: 20px;">
+        								<button id="show250" style="margin: 5px; padding: 8px 14px;">Show 250 Word Version</button>
+										<button id="show100" style="margin: 5px; padding: 8px 14px;">Show 100 Word Version</button>
+									</div>
+
+									<!-- 250 Word Version -->
+									<div id="version250">
+										<h2>250 Words Version</h2>
+										<p>Anais Piquion is a freelance game designer and visual artist based in Orlando, Florida, who currently holds a bachelors in Game Design from UCF. Specializing in 2D art, pixel design, and interactive storytelling, she creates narrative-driven games that merge vibrant worldbuilding with emotional depth. Her creative practice spans character and concept art, user interface design, and narrative writing, blending traditional illustration with digital techniques and coding.</p>
+										<p>Deeply inspired by Japanese culture, mythology, and folktales, Anais often reinterprets ancient stories and creatures through a fantasy lens, crafting experiences that connect players across fictional and emotional boundaries. Her fascination with steampunk and cyber aesthetics adds a distinctive flair to her visual style, while her passion for RPGs and JRPGs continues to shape her approach to game design—balancing strong storytelling with immersive gameplay. Her art style also consists of cute and smaller versions of characters and creatures and are used in many of her works and art commissions.</p>
+										<p>Anais’s work gained notable attention through her contributions to Year 100, a collaborative indie game that received high praise on Steam, which include her striking enemy design and her memorable voice performance. As an artist constantly exploring new mediums and techniques, she brings curiosity, creativity, and authenticity to every project.</p>
+										<p>When she’s not designing, Anais is a naturalist and animal lover; she enjoys taking care of her plants and her many pets. Whether creating small pixel-based experiences or developing larger narrative projects, Anais continues to push the boundaries of storytelling through art and design.</p>
+									</div>
+									
+									<!-- 100 Word Version -->
+									<div id="version100" style="display:none;">
+										<h2>100 Words Version</h2>
+										<p>Anais Piquion is a game designer and 2D artist based in Orlando, Florida. Specializing in pixel art, character and concept design, and narrative-driven games, she combines storytelling with visual creativity. Inspired by Japanese culture, mythology, and steampunk influences, her work bridges cultural traditions and futuristic aesthetics. Anais contributed to the indie game Year 100, praised for its art direction and voice performance. Anais continues to develop original games that blend emotion, myth, and design driven by her passion for RPGs and immersive narratives. When not creating, she enjoys collecting art merchandise and caring for her cat, Saki.</p>
+									</div>
 							</section>
 
 					</div>
@@ -144,9 +156,26 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+			const btn250 = document.getElementById("show250");
+			const btn100 = document.getElementById("show100");
+			const ver250 = document.getElementById("version250");
+			const ver100 = document.getElementById("version100");
+			
+			btn250.addEventListener("click", () => {
+				ver250.style.display = "block";
+				ver100.style.display = "none";
+			});
+			
+			btn100.addEventListener("click", () => {
+				ver250.style.display = "none";
+				ver100.style.display = "block";
+			});
+			</script>
 
 	</body>
 </html>
+
 
 
 

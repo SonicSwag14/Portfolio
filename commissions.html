@@ -217,6 +217,58 @@ Perfect for: Twitch, Discord, YouTube, or personalized sticker packs.</p>
 								</div>
 							</section>
 
+						<!-- Commission Form Section -->
+						<section id="commission-form">
+							<div class="inner">
+								<header class="major">
+									<h1>Commission Request Form</h1>
+								</header>
+								
+								<p>Please fill out the form below with your details and desired commission type. You’ll receive a follow-up email once your request has been reviewed.</p>
+								
+								<form action="mailto:anaispiq14@gmail.com" method="POST" enctype="text/plain">
+									<!-- Name -->
+									<label for="name"><strong>Name:</strong></label><br>
+									<input type="text" id="name" name="Name" placeholder="Your full name" required style="width:100%; padding:8px; margin-bottom:10px;"><br>
+
+									<!-- Email -->
+									<label for="email"><strong>Email:</strong></label><br>
+									<input type="email" id="email" name="Email" placeholder="your@email.com" required style="width:100%; padding:8px; margin-bottom:10px;"><br>
+      
+									<!-- Commission Category -->
+									<label for="category"><strong>Commission Type:</strong></label><br>
+									<select id="category" name="Commission Type" required style="width:100%; padding:8px; margin-bottom:10px;">
+										<option value="">-- Select Category --</option>
+										<option value="Emotes">Emotes (Twitch, Discord, etc.)</option>
+										<option value="Full Art">Full Art (2D Illustrations)</option>
+										<option value="Pixel Art">Pixel Art (Sprites, Assets, Portraits)</option>
+										<option value="Other">Other / Custom Request</option>
+									</select><br>
+      
+									<!-- Description -->
+									<label for="details"><strong>Project Details:</strong></label><br>
+									<textarea id="details" name="Description" placeholder="Describe what you’d like to commission (pose, expression, background, etc.)" rows="6" required style="width:100%; padding:8px; margin-bottom:10px;"></textarea><br>
+
+									<!-- References -->
+									<label for="references"><strong>Reference Links (optional):</strong></label><br>
+									<textarea id="references" name="References" placeholder="Links to reference images, Pinterest boards, or inspiration." rows="3" style="width:100%; padding:8px; margin-bottom:10px;"></textarea><br>
+
+									<!-- Budget -->
+									<label for="budget"><strong>Estimated Budget (optional):</strong></label><br>
+									<input type="text" id="budget" name="Budget" placeholder="Example: $50–$100" style="width:100%; padding:8px; margin-bottom:10px;"><br>
+
+									<!-- Terms Agreement -->
+									<label>
+										<input type="checkbox" name="Agree" required>
+										I have read and agree to the <a href="#rules">Commission Rules</a>.
+									</label><br><br>
+
+									<!-- Submit Button -->
+									<input type="submit" value="Submit Commission Request" style="padding:10px 20px; background-color:#2e86de; color:white; border:none; border-radius:5px; cursor:pointer;">
+									<input type="reset" value="Clear Form" style="padding:10px 20px; background-color:#888; color:white; border:none; border-radius:5px; margin-left:10px; cursor:pointer;">
+								</form>
+							</div>
+						</section>
 					</div>
 
 				<!-- Contact -->
@@ -302,6 +354,7 @@ Perfect for: Twitch, Discord, YouTube, or personalized sticker packs.</p>
 
 	</body>
 </html>
+
 
 
 

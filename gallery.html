@@ -57,40 +57,60 @@
 
 				<!-- Main -->
 					<div id="main">
-
-						<!-- One -->
-							<section id="one">
-								<div class="content">
-										<div class="inner">
-											<header class="major">
-											<header style="text-align: center; padding: 20px;">
-  												<h3>Chibi Art</h3>
-  												<p>Here are some of the chibi based works I've done</p>
-											</header>
-
-											<ul class="actions">
-											</ul>
-										</div>
-									</div>
-								<div class="gallery">
-   									<img alt="Maya_CH" src="images/Maya_CH.JPG"/>
-   									<img alt="Crow_CH" src="images/Crow_CH.JPG"/>
- 	  								<img alt="Mizuki_CH" src="images/Mizuki_CH.JPG"/>
-   									<img alt="Ryo_CH" src="images/Ryo_CH.JPG"/>
-									<img alt="Chilli_CH" src="images/Chilli_CH.JPG"/>
-									<img alt="MEIKA_CH" src="images/MEIKA_CH.JPG"/>
-									<img alt="Comm_CH" src="images/Comm_CH.JPG"/>
-									<img alt="HH_CH" src="images/HH_CH.png"/>
-									<img alt="HellHound_CH" src="images/HellHound_CH.JPG"/>
-  								</div>
-								<!-- Bootstrap & jQuery JS -->
-  								<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
-  								</script>
-  								<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">
-  								</script>
+  <!-- One -->
+  <section id="one" style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+  <div class="content">
+    <div class="inner">
+      <header style="text-align: center; padding: 20px;">
+        <h3>Chibi Art</h3>
+        <p>Here are some of the chibi based works I've done</p>
+      </header>
+    </div>
+  </div>
+</section>
 
 
-							</section>
+    <!-- Gallery -->
+    <div class="gallery">
+      <img alt="Maya_CH" src="images/Maya_CH.JPG" class="gallery-img"/>
+      <img alt="Crow_CH" src="images/Crow_CH.JPG" class="gallery-img"/>
+      <img alt="Mizuki_CH" src="images/Mizuki_CH.JPG" class="gallery-img"/>
+      <img alt="Ryo_CH" src="images/Ryo_CH.JPG" class="gallery-img"/>
+      <img alt="Chilli_CH" src="images/Chilli_CH.JPG" class="gallery-img"/>
+      <img alt="MEIKA_CH" src="images/MEIKA_CH.JPG" class="gallery-img"/>
+      <img alt="Comm_CH" src="images/Comm_CH.JPG" class="gallery-img"/>
+      <img alt="HH_CH" src="images/HH_CH.png" class="gallery-img"/>
+      <img alt="HellHound_CH" src="images/HellHound_CH.JPG" class="gallery-img"/>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="imageModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-body text-center">
+            <img id="modalImage" src="" alt="" style="width:100%; height:auto;"/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- Bootstrap & jQuery JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+  // When any gallery image is clicked
+  $(".gallery-img").on("click", function() {
+    var src = $(this).attr("src");
+    var alt = $(this).attr("alt");
+    $("#modalImage").attr("src", src);
+    $("#modalImage").attr("alt", alt);
+    $("#imageModal").modal("show");
+  });
+</script>
+
 
 						<!-- Two -->
 							<section id="two">
@@ -437,6 +457,7 @@
 
 	</body>
 </html>
+
 
 
 

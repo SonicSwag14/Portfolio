@@ -68,18 +68,19 @@
     </div>
   </div>
 
-<!-- Gallery -->
-<div class="gallery" style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
-  <img alt="Maya_CH" src="images/Maya_CH.JPG" class="gallery-img"/>
-  <img alt="Crow_CH" src="images/Crow_CH.JPG" class="gallery-img"/>
-  <img alt="Mizuki_CH" src="images/Mizuki_CH.JPG" class="gallery-img"/>
-  <img alt="Ryo_CH" src="images/Ryo_CH.JPG" class="gallery-img"/>
-  <img alt="Chilli_CH" src="images/Chilli_CH.JPG" class="gallery-img"/>
-  <img alt="MEIKA_CH" src="images/MEIKA_CH.JPG" class="gallery-img"/>
-  <img alt="Comm_CH" src="images/Comm_CH.JPG" class="gallery-img"/>
-  <img alt="HH_CH" src="images/HH_CH.png" class="gallery-img"/>
-  <img alt="HellHound_CH" src="images/HellHound_CH.JPG" class="gallery-img"/>
-</div>
+  <!-- Gallery -->
+  <div class="gallery">
+    <img alt="Maya_CH" src="images/Maya_CH.JPG" class="gallery-img"/>
+    <img alt="Crow_CH" src="images/Crow_CH.JPG" class="gallery-img"/>
+    <img alt="Mizuki_CH" src="images/Mizuki_CH.JPG" class="gallery-img"/>
+    <img alt="Ryo_CH" src="images/Ryo_CH.JPG" class="gallery-img"/>
+    <img alt="Chilli_CH" src="images/Chilli_CH.JPG" class="gallery-img"/>
+    <img alt="MEIKA_CH" src="images/MEIKA_CH.JPG" class="gallery-img"/>
+    <img alt="Comm_CH" src="images/Comm_CH.JPG" class="gallery-img"/>
+    <img alt="HH_CH" src="images/HH_CH.png" class="gallery-img"/>
+    <img alt="HellHound_CH" src="images/HellHound_CH.JPG" class="gallery-img"/>
+  </div>
+</section>
 
 <!-- Overlay Popup -->
 <div id="overlay" style="
@@ -109,7 +110,28 @@
     document.getElementById("overlay").style.display = "none";
   });
 </script>
-</section>
+
+<!-- CSS -->
+<style>
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .gallery img {
+    width: 100px;   /* same size as emotes */
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+
+  .gallery img:hover {
+    transform: scale(1.1);
+  }
+</style>
+
 
 
 						<!-- Two -->
@@ -457,6 +479,7 @@
 
 	</body>
 </html>
+
 
 
 

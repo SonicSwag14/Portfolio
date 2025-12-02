@@ -57,80 +57,80 @@
 
 				<!-- Main -->
 					<div id="main">
-  <!-- One -->
-<section id="one" style="text-align: center; padding: 20px 0; margin-bottom: 10px;">
-  <div class="content">
-    <div class="inner">
-      <header style="margin-bottom: 10px;">
-        <h3 style="margin: 0;">Chibi Art</h3>
-        <p style="margin: 5px 0;">Here are some of the chibi based works I've done</p>
-      </header>
-    </div>
-  </div>
+  					<!-- One -->
+						<section id="one" style="text-align: center; padding: 20px 0; margin-bottom: 10px;">
+  							<div class="content">
+    						<div class="inner">
+      							<header style="margin-bottom: 10px;">
+						        	<h3 style="margin: 0;">Chibi Art</h3>
+						        	<p style="margin: 5px 0;">Here are some of the chibi based works I've done</p>
+						      	</header>
+						    	</div>
+						  	</div>
 
-  <!-- Gallery -->
-  <div class="gallery">
-    <img alt="Maya_CH" src="images/Maya_CH.JPG" class="gallery-img"/>
-    <img alt="Crow_CH" src="images/Crow_CH.JPG" class="gallery-img"/>
-    <img alt="Mizuki_CH" src="images/Mizuki_CH.JPG" class="gallery-img"/>
-    <img alt="Ryo_CH" src="images/Ryo_CH.JPG" class="gallery-img"/>
-    <img alt="Chilli_CH" src="images/Chilli_CH.JPG" class="gallery-img"/>
-    <img alt="MEIKA_CH" src="images/MEIKA_CH.JPG" class="gallery-img"/>
-    <img alt="Comm_CH" src="images/Comm_CH.JPG" class="gallery-img"/>
-    <img alt="HH_CH" src="images/HH_CH.png" class="gallery-img"/>
-    <img alt="HellHound_CH" src="images/HellHound_CH.JPG" class="gallery-img"/>
-  </div>
-
-<!-- Overlay Popup -->
-<div id="overlay" style="
-  display: none;
-  position: fixed;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: rgba(0,0,0,0.8);
-  justify-content: center;
-  align-items: center;
-  z-index: 9999;">
-  <img id="overlayImage" src="" alt="" style="max-width: 90%; max-height: 90%; border: 4px solid #fff;"/>
-</div>
-
-<script>
-  // Show overlay when image clicked
-  document.querySelectorAll(".gallery-img").forEach(img => {
-    img.addEventListener("click", () => {
-      document.getElementById("overlayImage").src = img.src;
-      document.getElementById("overlayImage").alt = img.alt;
-      document.getElementById("overlay").style.display = "flex";
-    });
-  });
-
-  // Hide overlay when clicked
-  document.getElementById("overlay").addEventListener("click", () => {
-    document.getElementById("overlay").style.display = "none";
-  });
-</script>
-
-<!-- CSS -->
-<style>
-  .gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-  }
-
-  .gallery img {
-    width: 100px;   /* same size as emotes */
-    height: auto;
-    cursor: pointer;
-    transition: transform 0.2s;
-  }
-
-  .gallery img:hover {
-    transform: scale(1.1);
-  }
-</style>
-	</section>
+							  <!-- Gallery -->
+							  <div class="gallery">
+							    <img alt="Maya_CH" src="images/Maya_CH.JPG" class="gallery-img"/>
+							    <img alt="Crow_CH" src="images/Crow_CH.JPG" class="gallery-img"/>
+							    <img alt="Mizuki_CH" src="images/Mizuki_CH.JPG" class="gallery-img"/>
+							    <img alt="Ryo_CH" src="images/Ryo_CH.JPG" class="gallery-img"/>
+							    <img alt="Chilli_CH" src="images/Chilli_CH.JPG" class="gallery-img"/>
+							    <img alt="MEIKA_CH" src="images/MEIKA_CH.JPG" class="gallery-img"/>
+							    <img alt="Comm_CH" src="images/Comm_CH.JPG" class="gallery-img"/>
+							    <img alt="HH_CH" src="images/HH_CH.png" class="gallery-img"/>
+							    <img alt="HellHound_CH" src="images/HellHound_CH.JPG" class="gallery-img"/>
+							  </div>
+							
+							<!-- Overlay Popup -->
+							<div id="overlay" style="
+							  display: none;
+							  position: fixed;
+							  top: 0; left: 0;
+							  width: 100%; height: 100%;
+							  background: rgba(0,0,0,0.8);
+							  justify-content: center;
+							  align-items: center;
+							  z-index: 9999;">
+							  <img id="overlayImage" src="" alt="" style="max-width: 90%; max-height: 90%; border: 4px solid #fff;"/>
+							</div>
+							
+							<script>
+							  // Show overlay when image clicked
+							  document.querySelectorAll(".gallery-img").forEach(img => {
+							    img.addEventListener("click", () => {
+							      document.getElementById("overlayImage").src = img.src;
+							      document.getElementById("overlayImage").alt = img.alt;
+							      document.getElementById("overlay").style.display = "flex";
+							    });
+							  });
+							
+							  // Hide overlay when clicked
+							  document.getElementById("overlay").addEventListener("click", () => {
+							    document.getElementById("overlay").style.display = "none";
+							  });
+							</script>
+							
+							<!-- CSS -->
+							<style>
+							  .gallery {
+							    display: flex;
+							    flex-wrap: wrap;
+							    gap: 10px;
+							    justify-content: center;
+							  }
+							
+							  .gallery img {
+							    width: 100px;   /* same size as emotes */
+							    height: auto;
+							    cursor: pointer;
+							    transition: transform 0.2s;
+							  }
+							
+							  .gallery img:hover {
+							    transform: scale(1.1);
+							  }
+							</style>
+								</section>
 
 
 						<!-- Two -->
@@ -478,6 +478,7 @@
 
 	</body>
 </html>
+
 
 
 
